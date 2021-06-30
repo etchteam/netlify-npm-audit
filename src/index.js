@@ -29,8 +29,8 @@ module.exports = {
   }) {
     try {
       // Run npm audit to check for security issues
-      const level = inputs.level || 'moderate';
-      await run('npm', ['audit', `--audit-level=${level}`])
+      const { level, skipDev } = inputs;
+      await run('npx', ['audit-ci', `--${level}`, `--skip-dev=${skipDev}`])
 
     } catch (error) {
       // The audit failed

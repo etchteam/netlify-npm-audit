@@ -13,7 +13,9 @@
   ],
   "keywords": [
     "netlify-plugin",
-    "netlify"
+    "netlify",
+    "npm",
+    "audit"
   ],
   "author": "Etch <ask@etch.co>",
   "license": "MIT",

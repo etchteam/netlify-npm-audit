@@ -4,3 +4,7 @@ inputs:
     description: Audit level, can be 'low', 'moderate' or 'high'
     default: moderate
     required: false
+  - name: skipDev
+    description: Don't audit dev dependencies
+    default: true
+    required: false
