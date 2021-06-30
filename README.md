@@ -9,3 +9,5 @@ Please install this plugin from the Netlify app.
 ## Configuration
 
 The following `inputs` options are available.
+
+`level` can be set as `low`, `moderate` or `high` default: `moderate`
