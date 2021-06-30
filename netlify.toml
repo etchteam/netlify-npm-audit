@@ -7,9 +7,10 @@
 # Use the current plugin in builds for testing and debugging.
 # Local path to the plugin.
 package = "."
-  # Plugin configuration
-  #  [plugins.inputs]
-  #  foo = "bar"
+
+# Plugin configuration
+[plugins.inputs]
+level = "high"
 
 [build]
 # Dummy build command

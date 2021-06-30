@@ -1,5 +1,5 @@
 {
-  "name": "netlify-plugin-npm-audit",
+  "name": "@etchteam/netlify-plugin-npm-audit",
   "version": "0.0.1",
   "description": "Netlify Build plugin - Run npm audit on netlify builds to catch security errors",
   "main": "src/index.js",
