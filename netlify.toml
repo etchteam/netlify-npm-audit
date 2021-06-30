@@ -8,10 +8,6 @@
 # Local path to the plugin.
 package = "."
 
-# Plugin configuration
-[plugins.inputs]
-level = "high"
-
 [build]
 # Dummy build command
 command = "echo onBuild"

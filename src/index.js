@@ -4,16 +4,6 @@
 
 module.exports = {
   async onPreBuild({
-    // Users can pass configuration inputs to any plugin in their Netlify
-    // configuration file.
-    // For example:
-    //
-    //   [[plugins]]
-    //   package = "netlify-plugin-npm-audit"
-    //     [plugins.inputs]
-    //     foo = "bar"
-    inputs,
-
     // Core utilities
     utils: {
       // Utility to report errors.
@@ -29,8 +19,7 @@ module.exports = {
   }) {
     try {
       // Run npm audit to check for security issues
-      const { level, skipDev } = inputs;
-      await run('npx', ['audit-ci', `--${level}`, `--skip-dev=${skipDev}`])
+      await run('npx', ['audit-ci', '--config=audit-ci.json'])
 
     } catch (error) {
       // The audit failed

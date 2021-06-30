@@ -8,7 +8,4 @@ Please install this plugin from the Netlify app.
 
 ## Configuration
 
-The following `inputs` options are available.
-
-- `level` can be set as `low`, `moderate` or `high` default: `moderate`
-- `skipDev` is `true` by default, but can be set to `false` to audit `devDependencies`
+Add an `audit-ci.json` file to set the [audit configuration](https://www.npmjs.com/package/audit-ci)
